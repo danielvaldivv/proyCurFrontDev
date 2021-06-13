@@ -1,0 +1,163 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: monospace;
+}
+
+body {
+    background: linear-gradient(#0a2c58, #5d6877);
+    font-size: 2rem;
+}
+header {
+    background-color: #0a2c58;
+    width: 100%;
+    height: auto;
+    box-shadow: 5px 10px 10px #1e3b64;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
+header div .picture{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+img {
+    height: 50px;
+}
+
+header .picture h1 {
+    color: rgb(135, 138, 165);
+    font-size: 4rem;
+    padding-left: 10px;
+}
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: calc(100vh - 100px);
+}
+.login__container {
+    background-color: rgba( 255, 255, 255, 0.1);
+    border: 2px solid rgb(135, 138, 165);
+    border-radius: 20px;
+    padding: 50px;
+    min-height: 400px;
+    width: 400px;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+h1{
+    font-size: 4rem;
+    padding-bottom: 40px;
+}
+.login__container--form {
+    display: flex;
+    flex-direction: column;
+}
+.login__container--form label {
+    font-size: 1.8rem;
+}
+.login__container--remenber-me {
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.login__container--remenber-me a {
+font-size: 1.7rem;
+text-decoration: none;
+color: aliceblue;
+}
+.login__container--remenber-me a:hover {
+   text-decoration: underline; 
+}
+.redes {
+    height: 30px;  
+    margin-right: 10px; 
+}
+.login__container--social-media > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.login__container--register  {
+font-size: 1.6rem;
+}
+.login__container--register a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: aliceblue;
+}
+.login__container--register a:hover {
+    text-decoration: underline; 
+}
+.input {
+    background-color: transparent;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid rgb(135, 138, 165);
+    font-size: 2.5rem;
+    font-family: monospace;
+    text-align: center;
+    margin-bottom:15px;
+    padding: 5px;
+    outline: none;
+}
+::placeholder {
+    color: rgb(135, 138, 165);
+}
+.button {
+background-color: rgba( 255, 255, 255, 0.3);
+border: none;
+border-radius: 25px;
+color: rgb(74, 78, 116);
+cursor:pointer;
+font-size: 2.5rem;
+font-weight: bold;
+font-family: monospace;
+padding: 5px;
+letter-spacing: 1px;
+margin: 10px;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+.footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 1.8rem;
+    padding-left: 30px;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
+@media only screen and (max-width: 600px) {
+    .login__container {
+        background-color: transparent;
+        border: none;
+        padding: 20px;
+        width: 100%;
+    }
+    .footer{
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
