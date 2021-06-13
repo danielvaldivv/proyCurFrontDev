@@ -3,13 +3,17 @@
     margin: 0;
     padding: 0;
 }
+$color-one:#113361;
+$color-degrade: rgba(255, 255, 255, 0.1);
+$fuente-one: 1.8rem;
+
 html {
     font-size: 62.5%;
     font-family: monospace;
 }
 
 body {
-    background-color: #113361;
+    background-color: $color-one;
 }
 header {
     background-color: #0a2c58;
@@ -54,7 +58,7 @@ header div ul {
     list-style: none;
     width: 150px;
     text-align: right;
-    font-size: 1.8rem;
+    font-size: $fuente-one;
     padding-right: 20px;
 }
 .cerrar{
@@ -93,7 +97,7 @@ input{
     color: rgb(23, 35, 66);
     font-size: 3.5rem;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: $color-degrade;
     outline:none;
 }
 input:focus-visible {
@@ -167,7 +171,7 @@ input:focus-visible {
 .footer a {
     color: white;
     cursor: pointer;
-    font-size: 1.8rem;
+    font-size: $fuente-one;
     padding-left: 30px;
     text-decoration: none;
 }
